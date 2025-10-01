@@ -1,5 +1,6 @@
 // components/About.jsx
 import React from 'react';
+import logo from "../assets/auto-association-logo.png"
 
 const About = () => {
   return (
@@ -24,7 +25,7 @@ const About = () => {
               </p>
             </div>
             <div className="col-lg-6 text-center">
-              <img src="https://via.placeholder.com/500x400?text=KVCSS+Trust" alt="KVCSS" className="img-fluid rounded-4 shadow" />
+              <img src={logo} alt="KVCSS" className="img-fluid rounded-4 shadow p-2"  width='400' height='400' />
             </div>
           </div>
         </div>

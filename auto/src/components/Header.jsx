@@ -1,5 +1,7 @@
 // Navbar.jsx
 import React from 'react';
+// Import your logo
+import logo from '../assets/auto-association-logo.png';
 
 const Header = () => {
   return (
@@ -23,7 +25,7 @@ const Header = () => {
         <div className="container-fluid px-4">
           {/* Logo */}
           <a className="navbar-brand fw-bold fs-3" href="/">
-           <img src="../assets/auto-association-logo.png" alt='logo' />
+             <img src={logo} alt="KVCSS Logo" style={{ height: '50px', marginRight: '10px' }} />
           </a>
 
           {/* Mobile Toggle Button */}

@@ -298,7 +298,7 @@ Submitted on: ${new Date().toLocaleString()}
       </section>
 
       {/* Alternative Contact */}
-      <section className="py-5 bg-white">
+      {/* <section className="py-5 bg-white">
         <div className="container">
           <div className="text-center">
             <h4 className="fw-bold mb-3">Alternative Registration Method</h4>
@@ -308,10 +308,10 @@ Submitted on: ${new Date().toLocaleString()}
             </a>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Info Section */}
-      <section className="py-5">
+      <section className="bg-white py-5">
         <div className="container">
           <h3 className="text-center fw-bold mb-4">Why Register With Us?</h3>
           <div className="row g-4">

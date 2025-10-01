@@ -1,5 +1,6 @@
 // components/Services.jsx
 import React from 'react';
+import services from '../assets/services.png'
 
 
  const Services = () => {
@@ -78,7 +79,7 @@ import React from 'react';
               <a href="/registration" className="btn btn-danger btn-lg rounded-pill px-4">Get Started</a>
             </div>
             <div className="col-lg-6 text-center">
-              <img src="https://via.placeholder.com/500x400?text=KVCSS+Services" alt="Services" className="img-fluid rounded-4 shadow" />
+              <img src={services} alt="Services" className="img-fluid rounded-4 shadow" />
             </div>
           </div>
         </div>

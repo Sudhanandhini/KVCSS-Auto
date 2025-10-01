@@ -45,12 +45,7 @@ const Benefits = () => {
       description: 'Comprehensive coverage options and claim assistance from our experts. Get the best insurance deals tailored for auto drivers.',
       color: 'info'
     },
-     {
-      icon: '👴',
-      title: 'Senior Citizen Pension (60+)',
-      description: 'Monthly pension support for members aged 60 and above. Financial security for retired auto drivers ensuring dignity in their golden years.',
-      color: 'secondary'
-    },
+
    
     {
       icon: '👕',
@@ -58,6 +53,13 @@ const Benefits = () => {
       description: 'Official KVCSS uniform provided to all registered members. Professional attire that identifies you as a trusted member of our association.',
       color: 'success'
     },
+     {
+      icon: '👴',
+      title: 'Senior Citizen Pension (60+)',
+      description: 'Monthly pension support for members aged 60 and above. Financial security for retired auto drivers ensuring dignity in their golden years.',
+      color: 'secondary'
+    },
+   
    
     {
       icon: '🏥',

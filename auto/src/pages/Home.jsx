@@ -1,36 +1,45 @@
 // Home.jsx
 import React from 'react';
+import bannerBg from '../assets/banner-new.jpg';
+
+
 
 const Home = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-warning bg-opacity-25 py-5" style={{ background: 'linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%)' }}>
-        <div className="container py-5">
-          <div className="row align-items-center">
-            <div className="col-lg-6 mb-4 mb-lg-0">
-              <h1 className="display-3 fw-bold mb-4">
-                Where Auto Enthusiasts
-                <span className="text-danger d-block">Drive Together</span>
-                Stay Protected
-              </h1>
-              <p className="lead text-secondary mb-4">
-                Join the largest community of auto drivers. Get exclusive benefits, roadside assistance, and comprehensive insurance coverage.
-              </p>
-              <div className="d-flex gap-3 flex-wrap">
-                <a href="#pricing" className="btn btn-dark btn-lg rounded-pill px-4">Get Started</a>
-                <a href="#about" className="btn btn-outline-dark btn-lg rounded-pill px-4">Learn More</a>
-              </div>
-            </div>
-            <div className="col-lg-6 text-center">
-              <img src="https://via.placeholder.com/400x300?text=Auto+Rickshaw" alt="Auto Rickshaw" className="img-fluid" style={{ maxWidth: '400px' }} />
-            </div>
-          </div>
-        </div>
-      </section>
+   <section    
+  className="py-5 position-relative"    
+  style={{      
+    background: ` url(${bannerBg})`,
+    backgroundSize: 'cover',     
+    backgroundPosition: 'center',     
+    backgroundRepeat: 'no-repeat',
+    minHeight: '500px'
+  }} 
+>         
+  <div className="container py-5">           
+    <div className="row align-items-center justify-content-center">             
+      <div className="col-lg-8 text-center">               
+        <h1 className="display-3 fw-bold mb-4">                 
+          Where Auto Enthusiasts                 
+          <span className="text-danger d-block">Drive Together</span>                 
+          Stay Protected               
+        </h1>               
+        <p className="lead text-secondary mb-4 mx-auto" style={{ maxWidth: '700px' }}>                 
+          Join the largest community of auto drivers. Get exclusive benefits, roadside assistance, and comprehensive insurance coverage.               
+        </p>               
+        <div className="d-flex gap-3 flex-wrap justify-content-center">                 
+          <a href="#pricing" className="btn btn-dark btn-lg rounded-pill px-4">Get Started</a>                 
+          <a href="#about" className="btn btn-outline-dark btn-lg rounded-pill px-4">Learn More</a>               
+        </div>             
+      </div>                       
+    </div>         
+  </div>       
+</section>
 
       {/* Stats Section */}
-      <section className="bg-white py-5 shadow-sm">
+      {/* <section className="bg-white py-5 shadow-sm">
         <div className="container">
           <div className="row text-center g-4">
             <div className="col-md-3 col-6">
@@ -51,7 +60,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Benefits Section */}
       <section className="bg-light py-5" id="benefits">

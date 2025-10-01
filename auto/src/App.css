@@ -1,0 +1,17 @@
+/* App.css */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.hover-danger:hover {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: white !important; /* Optional: make text white on hover */
+  border-radius: 4px; /* Optional: smooth look */
+ 
+}

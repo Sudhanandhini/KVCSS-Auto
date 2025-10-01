@@ -1,6 +1,7 @@
 // Home.jsx
 import React from 'react';
 import bannerBg from '../assets/banner-new.jpg';
+import about from '../assets/about.jpg';
 
 
 
@@ -115,7 +116,7 @@ const Home = () => {
         <div className="container py-4">
           <div className="row align-items-center">
             <div className="col-lg-6 mb-4 mb-lg-0 text-center">
-              <img src="https://via.placeholder.com/400x400?text=Team" alt="Team" className="img-fluid rounded-4 shadow-lg" style={{ maxWidth: '400px' }} />
+              <img src={about} alt="Team" className="img-fluid rounded-4 shadow-lg" style={{ maxWidth: '400px' }} />
             </div>
             <div className="col-lg-6">
               <h2 className="display-5 fw-bold mb-4">About Us</h2>

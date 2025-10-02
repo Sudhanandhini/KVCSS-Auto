@@ -1,5 +1,5 @@
 // App.jsx
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -14,7 +14,7 @@ import Contact from './pages/Contact'
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <Header />
       
       <div className="content">
@@ -29,7 +29,7 @@ function App() {
       </div>
       
       <Footer />
-    </BrowserRouter>
+    </>
   )
 }
 

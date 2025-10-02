@@ -69,7 +69,7 @@ const Home = () => {
                         {slide.description}
                       </p>
                       <div className="d-flex gap-3 flex-wrap justify-content-center">
-                        <a href="#pricing" className="btn btn-dark btn-lg rounded-pill px-4">Get Started</a>
+                        <a href="/contact" className="btn btn-dark btn-lg rounded-pill px-4">Get Started</a>
                         <a href="#about" className="btn btn-outline-dark btn-lg rounded-pill px-4">Learn More</a>
                       </div>
                     </div>

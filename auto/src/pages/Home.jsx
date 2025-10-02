@@ -2,14 +2,88 @@
 import React from 'react';
 import bannerBg from '../assets/banner-new.jpg';
 import about from '../assets/about.jpg';
+import { Carousel } from 'react-bootstrap';
+
+
+// Your slides data
+const slides = [
+  {
+    title: "Where Auto Enthusiasts",
+    highlight: "Drive Together",
+    subtitle: "Stay Protected",
+    description: "Join the largest community of auto drivers. Get exclusive benefits, roadside assistance, and comprehensive insurance coverage.",
+    bg: bannerBg // your first background image
+  },
+  {
+    title: "Get Comprehensive",
+    highlight: "Auto Coverage",
+    subtitle: "24/7 Support",
+    description: "Protect your vehicle with our comprehensive insurance plans. Enjoy peace of mind with round-the-clock roadside assistance.",
+    bg: bannerBg // add your second background image
+  },
+  {
+    title: "Join Thousands of",
+    highlight: "Happy Drivers",
+    subtitle: "Nationwide",
+    description: "Be part of a community that values safety and quality. Access exclusive perks and premium benefits for members.",
+    bg: bannerBg // add your third background image
+  }
+];
 
 
 
 const Home = () => {
   return (
+
     <>
+
+      <section>
+        <Carousel
+          fade
+          controls={true}
+          indicators={true}
+          interval={5000}
+          className="hero-carousel"
+        >
+          {slides.map((slide, index) => (
+            <Carousel.Item key={index}>
+              <section
+                className="py-5 position-relative"
+                style={{
+                  background: `url(${slide.bg})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                  backgroundRepeat: 'no-repeat',
+                  minHeight: '500px'
+                }}
+              >
+                <div className="container py-5">
+                  <div className="row align-items-center justify-content-center">
+                    <div className="col-lg-8 text-center">
+                      <h1 className="display-3 fw-bold mb-4">
+                        {slide.title}
+                        <span className="text-danger d-block">{slide.highlight}</span>
+                        {slide.subtitle}
+                      </h1>
+                      <p className="lead text-secondary mb-4 mx-auto" style={{ maxWidth: '700px' }}>
+                        {slide.description}
+                      </p>
+                      <div className="d-flex gap-3 flex-wrap justify-content-center">
+                        <a href="#pricing" className="btn btn-dark btn-lg rounded-pill px-4">Get Started</a>
+                        <a href="#about" className="btn btn-outline-dark btn-lg rounded-pill px-4">Learn More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </section>
+
+
       {/* Hero Section */}
-   <section    
+      {/* <section    
   className="py-5 position-relative"    
   style={{      
     background: ` url(${bannerBg})`,
@@ -37,7 +111,7 @@ const Home = () => {
       </div>                       
     </div>         
   </div>       
-</section>
+</section> */}
 
       {/* Stats Section */}
       {/* <section className="bg-white py-5 shadow-sm">
@@ -169,7 +243,7 @@ const Home = () => {
       </section>
 
       {/* Pricing Section */}
-      <section className="bg-light py-5" id="pricing">
+      {/* <section className="bg-light py-5" id="pricing">
         <div className="container py-4">
           <div className="text-center mb-5">
             <h2 className="display-5 fw-bold mb-3">Choose Your Plan</h2>
@@ -224,7 +298,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section className="py-5 text-white" id="contact" style={{ background: 'linear-gradient(132deg, #f16b24 0%, #e1801c 100%)' }}>
@@ -272,7 +346,7 @@ const Home = () => {
               </div>
               <div className="card bg-white border-0 shadow-sm rounded-4 p-3 mb-3">
                 <div className="d-flex align-items-center gap-3">
-                  <div className=" rounded-3 p-3" style={{ width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor: '#000' }}>
+                  <div className=" rounded-3 p-3" style={{ width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#000' }}>
                     📞
                   </div>
                   <div>
@@ -283,7 +357,7 @@ const Home = () => {
               </div>
               <div className="card bg-white border-0 shadow-sm rounded-4 p-3 mb-3">
                 <div className="d-flex align-items-center gap-3">
-                  <div className=" rounded-3 p-3" style={{ width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center',backgroundColor: '#000' }}>
+                  <div className=" rounded-3 p-3" style={{ width: '50px', height: '50px', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#000' }}>
                     ✉️
                   </div>
                   <div>

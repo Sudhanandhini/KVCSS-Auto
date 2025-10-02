@@ -42,32 +42,32 @@ const Header = () => {
           <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul className="navbar-nav rounded px-3 py-2">
                 <li className="nav-item">
-                <a className="nav-link text-black hover-danger px-3" href="/#/">
+                <a className="nav-link text-black hover-danger px-3" href="/">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-black  hover-danger px-3" href="/#/about">
+                <a className="nav-link text-black  hover-danger px-3" href="/about">
                   About Us
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-black hover-danger px-3" href="/#/services">
+                <a className="nav-link text-black hover-danger px-3" href="/services">
                   Services
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-black hover-danger px-3" href="/#/registration">
+                <a className="nav-link text-black hover-danger px-3" href="//registration">
                   Registration
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-black hover-danger px-3" href="benefits">
+                <a className="nav-link text-black hover-danger px-3" href="/benefits">
                   Benefits
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link text-black hover-danger  px-3" href="contact">
+                <a className="nav-link text-black hover-danger  px-3" href="/contact">
                   Contact Us
                 </a>
               </li>
